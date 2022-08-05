@@ -4,6 +4,6 @@ pip install pipenv
 
 pipenv install --system
 
-mv template.html templates/proposta_judicial.html
+mv tmp/template.html templates/proposta_judicial.html
 
 python main.py 
