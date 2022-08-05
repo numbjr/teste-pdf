@@ -1,0 +1,376 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Proposta</title>
+</head>
+
+<body>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td colspan="1"><img src="{{ avatar }}" width="100" /></td>
+            <td colspan="2"><b>ID:</b> 000000 <br> <b>Data de solicitação:</b> 01/01/2022</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:14px;" colspan="2"
+                align="left">{{ razaoSocial }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:16px;" colspan="2"
+                align="Center">PROPOSTA PARA COTAÇÃO DE SEGURO</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+
+
+    </table>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px;" colspan="1" align="left">
+                <b>SEGURADORA</b> <br><b>Nome:</b>{{ seguradoraPrimeiroNome }}<br><b>CNPJ:</b> {{
+                seguradorNumeroRegistro }}<br><b>SUSEP:</b> {{ seguradoraSusep }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="1">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px;" colspan="1" align="left">
+                <b>TOMADOR</b><br><b>Nome:</b> {{ tomadorPrimeiroNome }}<br><b>CNPJ:</b> {{ tomadorNumeroRegistro
+                }}<br><b>Endereço:</b> {{ tomadorEndereco }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="1">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px;" colspan="1" align="left">
+                <b>CORRETORA</b><br><b>Nome:</b> {{ razaoSocial }}<br><b>CNPJ:</b> {{ numeroRegistro }}<br><b>SUSEP:</b>
+                {{ susep }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="1">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px;" colspan="1" align="left">
+                <b>CO-CORRETORA</b> <br><b>Nome:</b> {{ cocorretoraPrimeiroNome }}<br><b>CNPJ:</b> {{
+                cocorretoraNumeroRegistro }}<br><b>SUSEP</b> {{ cocorretoraSusep }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="1">&nbsp;</td>
+        </tr>
+
+    </table>
+
+    <tr>
+        <td width="51%" valign="top"></td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <p style="text-align: center;">
+            <h2>Informações iniciais da demanda</h2>
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">Tipo de demanda</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">Número de processo</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center">{{ tipoDemanda }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center">{{ numeroProcesso }}</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">Modalidade</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">Auto de infração</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center">{{ modalidade }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center">{{ autoInfracao }}</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">Tipo de processo</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">Certidão de dívida ativa</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center">{{ tipoProcesso }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center">{{ cda }}</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">Tipo de recurso</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">
+                        Tributo cobrado</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center">{{ tipoRecurso }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center">{{ tributoCobrado }}</td>
+
+                </tr>
+            </table>
+
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <p style="text-align: center;">
+            <h2>Partes envolvidas na demanda</h2>
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:16px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">Tomador</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:16px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">Juízo</td>
+                </tr>
+
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center"><b>Nome:</b><br>{{ tomadorPrimeiroNome }}<br><b>CNPJ:</b><br> {{
+                        tomadorNumeroRegistro }}<br><b>Endereço:</b> <br>{{ tomadorEndereco }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center"><b>Nome:</b><br>{{ juizoPrimeiroNome }}<br><b>CNPJ:</b><br> {{
+                        juizoNumeroProcesso }}<br><b>Endereço:</b> <br>{{ juizoEndereco }}</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:16px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">Segurado</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:16px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">Órgão julgador</td>
+                </tr>
+
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center"><b>Nome:</b><br>{{ seguradoPrimeiroNome }}<br><b>CNPJ:</b> <br>{{
+                        seguradoNumeroRegistro }}<br><b>Endereço:</b> <br>{{ seguradoEndereco }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center"><b>Nome:</b><br>{{ varaNome }}</td>
+                </tr>
+
+            </table>
+
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <p style="text-align: center;">
+            <h2>Valores da demanda</h2>
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">Tempo de vigência</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">Valor base para garantia</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center">{{ tempoVigencia }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center">{{ valorGarantia }}</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">% de agravo</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">Valor do agravo</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center">{{ percentual }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center">{{ valorAgravo }}</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        width="34%" height="32" align="center">Índice de reajuste</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        width="30%" align="center">Importância segurada</td>
+
+                </tr>
+                <tr>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                        height="32" align="center">{{ tipoIndice }}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                        align="center">{{ importanciaSegurada }}</td>
+
+                </tr>
+
+            </table>
+
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <p style="text-align: center;">
+            <h2>Dados da demanda</h2>
+    </tr>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                width="34%" height="32" align="center">Classificação de êxito</td>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:0px solid #333; border-bottom:0px solid #333; border-right:0px solid #333;"
+                width="30%" align="center"></td>
+
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-left:0px solid #333; border-right:0px solid #333;"
+                height="32" align="center">{{ classificacaoExito }}</td>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:0px solid #333; border-right:0px solid #333;"
+                align="center"></td>
+        </tr>
+
+    </table>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px;" colspan="2">
+                <ul>
+                    <li>Histórico do processo
+            </td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px;" colspan="2">{{
+                historicoProcesso }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px;" colspan="2">
+                <ul>
+                    <li>Linha de defesa
+            </td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px;" colspan="2">{{
+                defesaSustentada }}</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="" colspan="2" align="right">
+                <img width="300" height="150" src="{{ assinatura }}" title="" alt="" />
+            </td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px;" colspan="2"
+                align="right">Nome do responsável técnico da corretora</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px;" colspan="2" align="right"><b>{{
+                    responsavelCorretora }}</b></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="font-family:Verdana, Geneva, sans-serif; font-size:13px;" colspan="2" align="right">Copyright
+                2022 {{ fantasia }} – All Rights Reserved – Power by <b>Panteu</b> </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
