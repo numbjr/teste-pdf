@@ -67,7 +67,7 @@ class ConverterPdf:
         dir_path = os.path.dirname(os.path.realpath(__file__))
         template = get_template(f'proposta_judicial.html')
         html = template.render(dados)
-        filename = f"proposta_{dados['id']}_{str(datetime.now().strftime('%Y%m%d%H%M%S'))}.pdf"
+        filename = f"tmp/proposta_{dados['id']}_{str(datetime.now().strftime('%Y%m%d%H%M%S'))}.pdf"
         result = open(filename, 'wb')
         pdf = pisa.pisaDocument(BytesIO(html.encode("UTF-8")), result)
         result.close()
